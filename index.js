@@ -19,8 +19,8 @@ const port = 4000;
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
-  const productsCollection = client.db("emaJohnStore").collection("products");
-  const ordersCollection = client.db("emaJohnStore").collection("orders");
+  const productsCollection = client.db("emajhonStore").collection("products");
+  const ordersCollection = client.db("emajhonStore").collection("orders");
   
     app.post('/addProduct', (req, res) => {
         const products = req.body;
